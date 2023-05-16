@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+  <title>Encriptador/Desencriptador</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./img/Logo Alura.svg" alt="">
+  </header>
+  <main>
+    <section class="sectionEncrypt">
+      <textarea id="textTo" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+      <div class="information">
+        <img src="./img/Exclamation.svg" alt="">
+        <h6>Solo letras minúsculas y sin acentos</h6>
+      </div>
+
+      <div class="Buttons">
+        <button class="encrypt" onclick="encrypt()">
+          Encriptar
+        </button>
+        <button class="decrypt" onclick="decrypt()">
+          Desencriptar
+        </button>
+      </div>
+    </section>
+    <section class="sectionMessage">
+      <textarea class="message" cols="10" rows="1" placeholder=""></textarea>
+      <button class="copy" onclick="copyText()">
+        Copiar
+      </button>
+      <div class="noMessage">
+        <img src="./img/Muñeco.svg" alt="">
+        <h4>Ningún mensaje fue encontrado</h4>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+
+    </section>
+  </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
